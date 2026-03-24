@@ -3,3 +3,4 @@ Flask
 python-docx
 markdown
 python-dotenv
+gunicorn
