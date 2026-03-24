@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Générateur d'exercice</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div class="container-fluid p-5 bg-primary text-white text-center">
+        <h1 class="fs-2">Projet GenEx</h1>
+        <h2 class="fs-4">Générateur d'exercices</h1>
+    </div>
+
+    <nav>
+        <div class="container-fluid p-2 bg-primary text-center text-white fs-4">
+            <span class="mb-3 mt-3">
+                <a href="{{ url_for('televerser') }}" class="text-white">Correcteur d'exercices</a>
+            </span>
+            |
+            <span class="mb-3 mt-3">
+                <a href="{{ url_for('index') }}" class="text-white">Générateur d'exercices</a>
+            </span>
+        </div>
+    </nav>
+    
+    <form action="{{ url_for('generer') }}" class="text-center" method="post">
+        <div class="mb-3 mt-3">
+            <label for="matiere" class="form-label">Matière</label>
+            <input type="text" class="form-control w-25 mx-auto" id="matiere" name="matiere" placeholder="Ex: Mathématiques, Développement..." required>
+        </div>
+
+        <div class="mb-3">
+            <label for="niveau" class="form-label">Niveau</label>
+            <input type="text" class="form-control w-25 mx-auto" id="niveau" name="niveau" placeholder="Ex: Terminale, BTS2, M1..." required>
+        </div>
+
+        <div class="mb-3">
+            <label for="precisions" class="form-label">Précisions (optionnel)</label>
+            <textarea id="precisions" class="form-control w-25   mx-auto" name="precisions" rows="4" placeholder="Ajoutez des détails ici..."></textarea>
+        </div>
+        <br>
+        
+        <button type="submit" class="btn btn-primary">Générer le sujet d'exercice</button>
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+    

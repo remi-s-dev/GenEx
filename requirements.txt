@@ -1,0 +1,5 @@
+google-genai
+Flask
+python-docx
+markdown
+python-dotenv
