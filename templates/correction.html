@@ -32,6 +32,8 @@
         <p>
             {% if exercices_corriges %}
                 {{ correction_formatee | safe }}
+            {% else %}
+                <p>Il y a eu un problème lors de l'envoi du corrigé.</p>
             {% endif %}
         </p>
     </div>

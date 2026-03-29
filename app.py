@@ -44,7 +44,7 @@ def generer():
     - Un titre de sujet.
     - Une introduction contextuelle si nécessaire.
     - Plusieurs questions distinctes (numérotées).
-    - Pour chaque question, laisse une zone de texte vide (indiquée par "[Réponse ici]") d'environ 4-5 lignes pour que l'élève puisse répondre.
+    - Pour chaque question, laisse une zone de texte vide (indiquée par "[Répondre ici]") d'environ 4-5 lignes pour que l'élève puisse répondre.
     #Calibrage / Format
     Proposer entre 5 et 10 exercices de {matiere}
     #Validation / Contraintes
